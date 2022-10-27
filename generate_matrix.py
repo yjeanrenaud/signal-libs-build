@@ -63,16 +63,16 @@ cross_targets = [
             "req-pkg": "gcc-aarch64-linux-gnu",
             "linker": "aarch64-linux-gnu-gcc",
         },
-        {
-            "target": "armv7-unknown-linux-gnueabihf",
-            "req-pkg": "gcc-arm-linux-gnueabihf",
-            "linker": "arm-linux-gnueabihf-gcc",
-        },
-        {
-            "target": "i686-unknown-linux-gnu",
-            "req-pkg": "gcc-i686-linux-gnu",
-            "linker": "i686-linux-gnu-gcc",
-        },
+        #{ # unsupported on ubuntu-latest due to x64 binaries?
+        #    "target": "armv7-unknown-linux-gnueabihf",
+        #    "req-pkg": "gcc-arm-linux-gnueabihf",
+        #    "linker": "arm-linux-gnueabihf-gcc",
+        #},
+        #{
+        #    "target": "i686-unknown-linux-gnu",
+        #    "req-pkg": "gcc-i686-linux-gnu",
+        #    "linker": "i686-linux-gnu-gcc",
+        #},
         {
             "target": "aarch64-apple-darwin",
             "host": {
